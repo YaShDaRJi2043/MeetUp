@@ -29,9 +29,10 @@ import Otp from "./Pages/Otp/Otp";
 import Registration1 from "./Pages/Registration1/Registration1";
 import VandorSignIn from "./Pages/vandor/VandorSignIn/VandorSignIn";
 import VandorPasswordReset from "./Pages/vandor/VandorPasswordReset/VandorPasswordReset";
-// import VandorSuccess from "./Pages/vandor/VandorSuccess/VandorSuccess";
+import VandorSuccess from "./Pages/vandor/VandorSuccess/VandorSuccess";
 import VandorForgotPassEmail from "./Pages/vandor/VandorForgotPassEmail/VandorForgotPassEmail";
 import VandorOtp from "./Pages/vandor/VandorOtp/VandorOtp";
+import BidDetails from "./Pages/vandor/Big Details/BidDetails";
 
 function App() {
   useEffect(() => {
@@ -74,10 +75,11 @@ function App() {
         />
         <Route path="/vandor/passwordreset/otp" element={<VandorOtp />} />
         <Route path="/vandor/passwordreset" element={<VandorPasswordReset />} />
-        {/* <Route
+        <Route
           path="/vandor/passwordreset/successfull"
           element={<VandorSuccess />}
-        /> */}
+        />
+        <Route path="/vandor/bid-details" element={<BidDetails />} />
       </Routes>
       <Footer />
     </div>
